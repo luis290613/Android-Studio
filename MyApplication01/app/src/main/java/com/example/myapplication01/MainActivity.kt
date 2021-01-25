@@ -10,7 +10,12 @@ class MainActivity : AppCompatActivity() {
         //variableYConstante()
         //tiposDeDatos()
         //sentenciaIf()
-        sentenciaWhen()
+        //sentenciaWhen()
+        //arreglos()
+        //maps()
+        //bucles()
+        //funciones()
+        clases()
     }
 
     private fun variableYConstante(){
@@ -27,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         println(myFerstConstant)
 
     }
-
     private fun tiposDeDatos(){
         //variables y constantes fuertemente tipados
 
@@ -92,7 +96,106 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+    fun arreglos(){
+        val nombre = "diego"
+        val apellido = "ruiz bautista"
+        val carrera = "sistemas"
+        val metas = "ingeniero"
+        val metas1 = "familia"
 
+        var arregloDatos : ArrayList<String> = arrayListOf<String>()
 
+        //añadir datos a un array
+        arregloDatos.add(nombre)
+        arregloDatos.add(apellido)
+        arregloDatos.add(carrera)
 
+        println(arregloDatos)
+
+        //añadir datos en conjunto
+        arregloDatos.addAll(listOf(metas,metas1))
+        println(arregloDatos)
+
+        //acceso de datos por posicion
+        println(arregloDatos[1])
+
+        //modificar datos
+        arregloDatos[1] = "cambiando por otro apellido"
+        println(arregloDatos)
+
+        //eliminar datos
+        arregloDatos.removeAt(1)
+        println(arregloDatos)
+
+        //recorrer arreglo con foreach
+        arregloDatos.forEach{
+            println(it)
+        }
+
+        //otras opciones
+        println(arregloDatos.count())
+        arregloDatos.clear()
+        println("deberia de ser 0 -> ${arregloDatos.count()}")
+
+    }
+    //hablaremos de mapas o tambien lalamados diccionarios
+    fun maps(){
+
+        //sintaxis de creacion de mapas o diccionarios
+        var myMaps : Map<String,Int> = mapOf()
+        println(myMaps)
+
+        //añadir elemenos
+        myMaps = mutableMapOf("key1" to 1, "key2" to 2, "key3" to 3)
+        println(myMaps)
+
+        //añadir un solo valor
+        myMaps["key4"] = 4
+        myMaps.put("key5",5)
+
+        //SI AGREGAS CON EL MISMO KEY PS LO MODIFICARA
+        myMaps.put("key1",10)
+
+        //acceder a un valor
+        println(myMaps["key1"])
+    }
+    //ciclos repeptitivos
+    fun bucles(){
+        val myArray : List<String> = listOf("hola","prueba","sigueinte prueba")
+        val myMap : MutableMap<String,Int> = mutableMapOf("key1" to 1,"key2" to 2, "key3" to 3)
+
+        //ciclo for
+
+        for (item in myArray) {
+            println(item)
+        }
+        for (item in myMap) {
+            println("${item.key} ,${item.value}")
+        }
+        //clasico
+        for (x in 0..10){
+            println(x)
+        }
+        //no imprime el ultimo
+        for (x in 0 until 10){
+            println(x)
+        }
+        //salto de 2 en 2 o el numero que se le indique después del step
+        for (x in 0..10 step 2){
+            println(x)
+        }
+        //en retro
+        for (x in 10 downTo 0 step 2){
+            println(x)
+        }
+        //creando array de rango numerico
+        val myNumberArrayNumerico : IntRange = (0..20)
+        for (i in myNumberArrayNumerico) {
+                println(i)
+        }
+    }
+    fun clases(){
+        val Diego = Programador("diego",apellido = "ruiz baurtista", edad = 23, lenguajes = arrayOf(Programador.Lenguajes.java,Programador.Lenguajes.swift))
+        println(Diego.code())
+    }
 }
