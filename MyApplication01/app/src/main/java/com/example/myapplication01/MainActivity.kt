@@ -195,7 +195,18 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun clases(){
+        //PRIMERA FORMA INSTANCIA UN TIPO DE CLASE
         val Diego = Programador("diego",apellido = "ruiz baurtista", edad = 23, lenguajes = arrayOf(Programador.Lenguajes.java,Programador.Lenguajes.swift))
         println(Diego.code())
+
+        //SEGUNDA FORMA DE INSTANCIAR OTRO TIPO DE CLASE
+        val persona = Persona(nom = "diego")
+        println(persona.ImprimiDatos())
+
+        val persona2 = Persona()
+        persona2.nombre = "persona 2"
+        persona2.sexo = true
+        println(persona2.ImprimiDatos())
+
     }
 }
