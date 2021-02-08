@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">App Clima</string>
+    <string name="texto_bienvenido">Bienvenido a mi app del clima, para poder ver el clima de una ciudad, selcciona abajo</string>
+    <string name="texto_boton_mexico">Clima de la Ciudad de México</string>
+    <string name="texto_boton_berlin">Clima de la Ciudad de berlín</string>
+</resources>

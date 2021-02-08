@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <Button
+        android:id="@+id/btnBC"
+        android:text="Ir a pantalla C"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_alignStart="@+id/btnBC"
+        android:layout_alignEnd="@+id/btnBC"
+        android:id="@+id/btnPrueba"
+        android:layout_below="@+id/btnBC"
+        android:text="boton de "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
