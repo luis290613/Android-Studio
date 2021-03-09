@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificarCodigoCell">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+    <TextView
+        android:id="@+id/TxtTitulo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:text="Verificar Código"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/TxtTitutloNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TxtTitulo"
+        android:layout_alignStart="@+id/btnBack"
+        android:layout_marginTop="30dp"
+        android:text="Verificar número de celular"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txtDescricion"
+        android:layout_marginTop="5dp"
+        android:layout_alignStart="@+id/TxtTitutloNumero"
+        android:layout_below="@+id/TxtTitutloNumero"
+        android:text="Ingrese el código enviado a : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/TxtTitutloNumero"
+        android:layout_toRightOf="@+id/txtDescricion"
+        android:id="@+id/TxtNumero"
+        android:layout_marginTop="5dp"
+        android:text="+51 990916163"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/LinearCodigo"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/btnBack"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/TxtNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:background="@drawable/bordertext"
+            android:hint="0"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+
+            />
+        <EditText
+            android:hint="0"
+            android:gravity="center"
+            android:background="@drawable/bordertext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            />
+        <EditText
+            android:hint="0"
+            android:gravity="center"
+            android:background="@drawable/bordertext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            />
+        <EditText
+            android:hint="0"
+            android:gravity="center"
+            android:background="@drawable/bordertext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ImgNext"
+        android:src="@drawable/next"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/LinearCodigo"
+        android:layout_alignRight="@+id/LinearCodigo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:layout_alignStart="@+id/btnBack"
+        android:layout_alignTop="@+id/ImgNext"
+        android:layout_below="@+id/LinearCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp">
+
+        <TextView
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/rojo"
+            android:background="@drawable/bordertextrojo"
+            android:text="Reenviar"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:gravity="center"
+            android:text="Reenviar código en : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+        <TextView
+
+            android:textStyle="bold"
+            android:textColor="@color/rojo"
+            android:visibility="visible"
+            android:gravity="center"
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

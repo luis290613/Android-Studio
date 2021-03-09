@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MensajeRegistrado"
+    android:background="@color/white">
+
+    <View
+        android:elevation="10dp"
+        android:id="@+id/ViewPadre"
+        android:background="@drawable/radiusall"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <View
+        android:elevation="10dp"
+        android:id="@+id/ViewBasta"
+        android:background="@drawable/radiobotton"
+        android:layout_alignBottom="@+id/ViewPadre"
+        android:layout_alignStart="@+id/ViewPadre"
+        android:layout_alignEnd="@+id/ViewPadre"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:elevation="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/TxtTitulo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/comprobado" />
+
+    <TextView
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/TxtTitulo"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/TxtDescripcion"
+        android:text="Registrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:elevation="10dp"
+        android:id="@+id/TxtDescripcion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/ViewBasta"
+        android:text="Su registro se realizó con éxito "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/ViewBasta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>

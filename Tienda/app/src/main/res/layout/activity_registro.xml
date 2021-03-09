@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+    <TextView
+        android:id="@+id/TxtTitulo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:text="Registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/TxtTitutloNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TxtTitulo"
+        android:layout_alignStart="@+id/btnBack"
+        android:layout_marginTop="30dp"
+        android:text="Bienvenido a Trambo"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txtDescricion"
+        android:layout_marginTop="5dp"
+        android:layout_alignStart="@+id/TxtTitutloNumero"
+        android:layout_below="@+id/TxtTitutloNumero"
+        android:text="Empecemos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/LinearRegistro"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtDescricion"
+        android:layout_alignStart="@+id/TxtTitutloNumero"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+         android:background="@drawable/bordertext"
+         android:hint="nombre"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="10dp"
+         android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+        android:background="@drawable/bordertext"
+        android:hint="Correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"/>
+
+        <EditText
+        android:background="@drawable/bordertext"
+        android:hint="Constraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/next"
+        android:layout_marginTop="15dp"
+        android:layout_alignEnd="@+id/LinearRegistro"
+        android:layout_below="@+id/LinearRegistro"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+</RelativeLayout>
